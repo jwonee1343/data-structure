@@ -1,7 +1,7 @@
 // UTF-8 encoding
 /**
- * @brief 큐를 쉽게 구현하고 사용하기 위한 매크로들을 정의함
- * @author Jaewon Choi <jwonee1343@gmail.com>
+ * @brief	큐를 쉽게 구현하고 사용하기 위한 매크로들을 정의함
+ * @author	Jaewon Choi <jwonee1343@gmail.com>
  */
 #ifndef __QUEUE_H
 #define __QUEUE_H
