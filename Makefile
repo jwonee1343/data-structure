@@ -16,9 +16,11 @@ Q := @
 endif
 
 default: $(SRCS:%.c=obj/%.o)
+	@mkdir -p bin
 	$(CC) -o bin/test $? $(INCS:%=-I%) $(CFLAGS)
 
 obj/%.o: %.c
+	@mkdir -p $(dir $@)
 	$(CC) -o $@ -c $< $(INCS:%=-I%) $(CFLAGS)
 
 clean:
