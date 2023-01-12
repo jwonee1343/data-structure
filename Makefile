@@ -1,12 +1,11 @@
 CC := gcc
 
-SRCS := test/main.c
-INCS := .
+SRCS += test/main.c
+INCS += .
 
+CFLAGS += -Wall
 ifdef DEBUG
-CFLAGS := -g
-else
-CFLAGS :=
+CFLAGS += -g
 endif
 
 default: $(SRCS:%.c=obj/%.o)
