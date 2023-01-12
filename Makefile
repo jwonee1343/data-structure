@@ -24,6 +24,6 @@ obj/%.o: %.c
 	$(CC) -o $@ -c $< $(INCS:%=-I%) $(CFLAGS)
 
 clean:
-	rm $(SRCS:%.c=obj/%.o)
-	rm bin/test
+	rm -f $(SRCS:%.c=obj/%.o)
+	rm -f bin/test
 
