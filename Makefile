@@ -9,12 +9,6 @@ else
 CFLAGS :=
 endif
 
-ifdef LOGALL
-Q :=
-else
-Q := @
-endif
-
 default: $(SRCS:%.c=obj/%.o)
 	@mkdir -p bin
 	$(CC) -o bin/test $? $(INCS:%=-I%) $(CFLAGS)
