@@ -69,11 +69,11 @@ extern "C"
  * @brief	스택에 빈 공간이 있으면, 데이터를 삽입합다
  * @param	stack		스택 구조체의 포인터
  */
-#define STACK_PUSH(stack, item)							\
-	do {									\
-		if (!STACK_FULL(stack)) {					\
-			(stack)->items[(stack)->top++] = item;			\
-		}                                                               \
+#define STACK_PUSH(stack, item)					\
+	do {							\
+		if (!STACK_FULL(stack)) {			\
+			(stack)->items[(stack)->top++] = item;	\
+		}                                              	\
 	} while (0)
 
 /**
